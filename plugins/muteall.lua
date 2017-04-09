@@ -29,9 +29,9 @@ local num3 = tonumber(second)
 local num4 = tonumber(num1 + num2 + num3)
 redis:setex(hash, num4, true)
 if not lang then
- return "Mute all has been enabled for \n⏺ hours : "..matches[2].."\n⏺ minutes : "..matches[3].."\n⏺ seconds : "..matches[4].."\n@BeyondTeam"
+ return "Mute all has been enabled for \n⏺ hours : "..matches[2].."\n⏺ minutes : "..matches[3].."\n⏺ seconds : "..matches[4].."\n@GODILOVEYOUME2"
  elseif lang then
- return "بی صدا کردن فعال شد در \n⏺ ساعت : "..matches[2].."\n⏺ دقیقه : "..matches[3].."\n⏺ ثانیه : "..matches[4].."\n@BeyondTeam"
+ return "بی صدا کردن فعال شد در \n⏺ ساعت : "..matches[2].."\n⏺ دقیقه : "..matches[3].."\n⏺ ثانیه : "..matches[4].."\n@GODILOVEYOUME2"
  end
  end
  if matches[1] == 'mutehours' and is_mod(msg) then
@@ -41,9 +41,9 @@ local num1 = tonumber(hour) * 3600
 local num4 = tonumber(num1)
 redis:setex(hash, num4, true)
 if not lang then
- return "Mute all has been enabled for \n⏺ hours : "..matches[2].."\n@BeyondTeam"
+ return "Mute all has been enabled for \n⏺ hours : "..matches[2].."\n@GODILOVEYOUME2"
  elseif lang then
- return "بی صدا کردن فعال شد در \n⏺ ساعت : "..matches[2].."\n@BeyondTeam"
+ return "بی صدا کردن فعال شد در \n⏺ ساعت : "..matches[2].."\n@GODILOVEYOUME2"
  end
  end
   if matches[1] == 'muteminutes' and is_mod(msg) then
@@ -53,9 +53,9 @@ local num2 = tonumber(minutes) * 60
 local num4 = tonumber(num2)
 redis:setex(hash, num4, true)
 if not lang then
- return "Mute all has been enabled for \n⏺ minutes : "..matches[2].."\n@BeyondTeam"
+ return "Mute all has been enabled for \n⏺ minutes : "..matches[2].."\n@GODILOVEYOUME2"
  elseif lang then
- return "بی صدا کردن فعال شد در \n⏺ دقیقه : "..matches[2].."\n@BeyondTeam"
+ return "بی صدا کردن فعال شد در \n⏺ دقیقه : "..matches[2].."\n@GODILOVEYOUME2"
  end
  end
   if matches[1] == 'muteseconds' and is_mod(msg) then
@@ -65,9 +65,9 @@ local num3 = tonumber(second)
 local num4 = tonumber(num3)
 redis:setex(hash, num3, true)
 if not lang then
- return "Mute all has been enabled for \n⏺ seconds : "..matches[2].."\n@BeyondTeam"
+ return "Mute all has been enabled for \n⏺ seconds : "..matches[2].."\n@GODILOVEYOUME2"
  elseif lang then
- return "بی صدا کردن فعال شد در \n⏺ ثانیه : "..matches[2].."\n@BeyondTeam"
+ return "بی صدا کردن فعال شد در \n⏺ ثانیه : "..matches[2].."\n@GODILOVEYOUME2"
  end
  end
  
