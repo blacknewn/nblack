@@ -61,9 +61,9 @@ end
       data[tostring(groups)][tostring(msg.to.id)] = msg.to.id
       save_data(_config.moderation.data, data)
     if not lang then
-  return '*Group has been added*'
+  return '*✨Group has been added✨*'
 else
-  return 'گروه با موفقیت به لیست گروه های مدیریتی ربات افزوده شد'
+  return '✨گروه با موفقیت به لیست گروه های مدیریتی ربات افزوده شد'
 end
 end
 
@@ -82,9 +82,9 @@ local lang = redis:get(hash)
     local receiver = msg.to.id
   if not data[tostring(msg.to.id)] then
   if not lang then
-    return '_Group is not added_'
+    return '_✨Group is not added✨_'
 else
-    return 'گروه به لیست گروه های مدیریتی ربات اضافه نشده است'
+    return '✨گروه به لیست گروه های مدیریتی ربات اضافه نشده است'
    end
   end
 
@@ -123,7 +123,7 @@ end
    if not lang then
          return "_Word_ *"..word.."* _added to filtered words list_"
             else
-         return "_کلمه_ *"..word.."* _به لیست کلمات فیلتر شده اضافه شد_"
+         return "_کلمه_ *"..word.."* _✨به لیست کلمات فیلتر شده اضافه شد_"
     end
 end
 
@@ -816,9 +816,9 @@ end
 else 
 data[tostring(target)]["settings"]["lock_arabic"] = "no" save_data(_config.moderation.data, data) 
 if not lang then
-return "*Arabic/Persian* _Posting Has Been Unlocked_" 
+return "*Arabic/Persian* _Posting Has Been Unlocked✨_" 
 else
-return "ارسال کلمات عربی/فارسی در گروه آزاد شد"
+return "✨ارسال کلمات عربی/فارسی در گروه آزاد شد"
 end
 end
 end
@@ -2895,9 +2895,9 @@ if matches[1] == 'newlink' and is_mod(msg) and not matches[2] then
   if matches[1] == "rules" then
  if not data[tostring(chat)]['rules'] then
    if not lang then
-     rules = "ℹ️ The Default Rules :\n1⃣ No Flood.\n2⃣ No Spam.\n3⃣ No Advertising.\n4⃣ Try to stay on topic.\n5⃣ Forbidden any racist, sexual, homophobic or gore content.\n➡️ Repeated failure to comply with these rules will cause ban.\n@BeyondTeam"
+     rules = "ℹ️ The Default Rules :\n1⃣ No Flood.\n2⃣ No Spam.\n3⃣ No Advertising.\n4⃣ Try to stay on topic.\n5⃣ Forbidden any racist, sexual, homophobic or gore content.\n➡️ Repeated failure to comply with these rules will cause ban.\n@GODILOVEYOUME2"
     elseif lang then
-       rules = "ℹ️ قوانین پپیشفرض:\n1⃣ ارسال پیام مکرر ممنوع.\n2⃣ اسپم ممنوع.\n3⃣ تبلیغ ممنوع.\n4⃣ سعی کنید از موضوع خارج نشید.\n5⃣ هرنوع نژاد پرستی, شاخ بازی و پورنوگرافی ممنوع .\n➡️ از قوانین پیروی کنید, در صورت عدم رعایت قوانین اول اخطار و در صورت تکرار مسدود.\n@BeyondTeam"
+       rules = "ℹ️ قوانین پپیشفرض:\n1⃣ ارسال پیام مکرر ممنوع.\n2⃣ اسپم ممنوع.\n3⃣ تبلیغ ممنوع.\n4⃣ سعی کنید از موضوع خارج نشید.\n5⃣ هرنوع نژاد پرستی, شاخ بازی و پورنوگرافی ممنوع .\n➡️ از قوانین پیروی کنید, در صورت عدم رعایت قوانین اول اخطار و در صورت تکرار مسدود.\n@GODILOVEYOUME2"
  end
         else
      rules = "*Group Rules :*\n"..data[tostring(chat)]['rules']
@@ -3099,7 +3099,7 @@ end
 if matches[1] == "help" and is_mod(msg) then
 if not lang then
 text = [[
-*Black Bot Commands:*
+*Black Bot Commands🛡💎:*
 *!setowner* `[username|id|reply]` 
 _Set Group Owner(Multi Owner)_
 *!remowner* `[username|id|reply]` 
@@ -3188,15 +3188,15 @@ _Show Tools Help_
 _Show Fun Help_
 *!helpmute*
 _Show mute Help_
-_You Can Use_ *[!/#]* _To Run The Commands_
-_This Help List Only For_ *Moderators/Owners!*
-_Its Means, Only Group_ *Moderators/Owners* _Can Use It!_
-*Good luck ;)*]]
+_You Can Use_ *[!/#]* _To Run The Commands✅_
+_This Help List Only For_ *Moderators/Owners!❇️*
+_Its Means, Only Group_ *Moderators/Owners* _Can Use It!✳️_
+*Good luck🔮 ;)*]]
 
 elseif lang then
 
 text = [[
-*دستورات ربات بلک:*
+*🛡💎دستورات ربات بلک:*
 *!setowner* `[username|id|reply]` 
 _انتخاب مالک گروه(قابل انتخاب چند مالک)_
 *!remowner* `[username|id|reply]` 
@@ -3285,10 +3285,10 @@ _نمایش راهنمای Tools_
 _نمایش راهنمای سرگرمی_
 *!helpmute*
 _نمایش دستورات بیصدا های گروه_
-_شما میتوانید از [!/#] در اول دستورات برای اجرای آنها بهره بگیرید
-این راهنما فقط برای مدیران/مالکان گروه میباشد!
-این به این معناست که فقط مدیران/مالکان گروه میتوانند از دستورات بالا استفاده کنند!_
-*موفق باشید ;)*]]
+_✅شما میتوانید از [!/#] در اول دستورات برای اجرای آنها بهره بگیرید
+این راهنما فقط برای مدیران/مالکان گروه میباشد!❇️
+این به این معناست که فقط مدیران/مالکان گروه میتوانند از دستورات بالا استفاده کنند!✳️_
+*🔮موفق باشید ;)*]]
 end
 return text
 end
